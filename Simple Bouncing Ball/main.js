@@ -58,15 +58,3 @@ function draw(){
 
     requestAnimationFrame(draw);
 }
-
-function addBall() {
-    balls.push(newBall());
-}
-
-document.addEventListener('click', clickHandler)
-
-function clickHandler(){
-    addBall();
-}
-
-// setInterval (draw, 10)
