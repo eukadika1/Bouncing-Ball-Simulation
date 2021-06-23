@@ -18,20 +18,12 @@ function drawBall() {
     ctx.closePath();
 }
 
-function newBall(){
-    ctx.beginPath();
-    ctx.arc(x, y, r, 0, Math.PI * 2)
-    ctx.fill()
-    ctx.closePath();
-}
-
 requestAnimationFrame(draw);
 
 function draw(){
     ctx.clearRect (0, 0, cnv.width, cnv.height);
     
     drawBall();
-    newBall()
     
     if (x + dx > cnv.width - r ) {
         dx = -dx
